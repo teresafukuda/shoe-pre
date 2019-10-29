@@ -35,10 +35,15 @@ weight_vis <- ggplot(clean_pre, aes(x=weight)) +
   geom_histogram()
 
 end_of_life_vis <- ggplot(clean_pre, aes(x=question_18)) + 
-  geom_histogram(stat='count')
+  geom_histogram(stat='count') +
+  theme(axis.text.x = element_text(angle = 90))
 
 
 ########################################################
 
 # Might be interesting next to try to look at step data and combine with age/weight and see if there are any obvious trends
+
+#######################################################
+
+
 
